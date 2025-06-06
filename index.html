@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Brendon - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="theme-toggle">Alternar Tema</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="divImgPerfil">
+                <h1>Brendon Santos</h1>
+                <img class="imgPerfil" src="img/WhatsApp Image 2025-03-17 at 18.21.31.jpeg" alt="Foto de perfil">
+            </div>
+            <h1 id="typingText" class="textPerfil typing"></h1>
+            <p>Apaixonado por transformar ideias em soluções web robustas, escaláveis e com foco na experiência do usuário.</p>
+            <a href="#projetos" class="cta-button">Ver Projetos</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/brendon-santos-de-almeida-7699111ba/" target="_blank" >LinkedIn</a>
+                <a href="https://github.com/Brendon2203" target="_blank" title="Perfil no GitHub (substituir #)">GitHub</a>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou Brendon Santos, um desenvolvedor Full Stack com experiência na criação de aplicações web completas, desde o design da interface até a implementação do backend e gerenciamento de banco de dados. Tenho um forte interesse em aprender novas tecnologias e aplicá-las para resolver problemas complexos de forma eficiente e criativa. Busco constantemente aprimorar minhas habilidades e contribuir para projetos desafiadores.</p>
+            <!-- Adicionar foto ou ilustração aqui seria ideal -->
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3 </li>
+                        <li>JavaScript </li>
+                        <li>React & Next.js</li>
+                        <li>Tailwind & Bootstrap</li>
+                        <li>Vue.js</li>
+                        <li>Design Responsivo</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js & Express</li>
+                        <li>Python (Django/Flask)</li>
+                        <li>Desenvolvimento de APIs</li>
+                    </ul>
+                </div>
+                 <div class="skill-category">
+                    <h3>Banco de Dados</h3>
+                    <ul>
+                        <li>SQL (MySQL, SQL Server)</li>
+                        <li>NoSQL (MongoDB)</li>
+                    </ul>
+                </div>
+                 <div class="skill-category">
+                    <h3>Ferramentas</h3>
+                    <ul>
+                        <li>Git & GitHub/GitLab</li>
+                        <li>Metodologias Ágeis (Scrum/Kanban)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos Destacados</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="img/CRM.png" alt="">
+                    <h3>Sistema de organização de leads</h3>
+                    <p>Desenvolvimento de um sistema para gerenciamento de leads com tela de login, banco de dados, analise dos dados, exportação e importação para o pipedrive, filtro de leads, backups e sistema de Mensagem programadas</p>
+                    <p><strong>Tecnologias:</strong> Python, Flask, Bootstrap, HTML, API REST </p>
+                    <a href="https://crm-simple-9xzk.onrender.com/menu" target="_blank" >Ver Demo</a>
+                    <a href="https://github.com/Brendon2203/CRM---SIMPLE" target="_blank" >Ver Código</a>
+                </div>
+                 <div class="project-card">
+                    <img src="img/login.png" alt="">
+                    
+                    <h3>Tela de login</h3>
+                    <p>Tela de login para um projeto de rede social, tela de login com verificação do google usando firebase.</p>
+                     <p><strong>Tecnologias:</strong>React, Vite, firebase, HTML, CSS, JavaScript</p>
+                    <a href="https://projeto-leitura-blue.vercel.app/" target="_blank">Ver Demo</a>
+                    <a href="https://github.com/Brendon2203/projeto-leitura" target="_blank">Ver Código</a>
+                </div>
+                 <div class="project-card">
+                    <img src="img/Namoro.png" alt="">
+                    <h3>Gerador de pedidos de namoro</h3>
+                    <p>Site simples para criação de pedidos de namoro com texto, foto, e link do spotify para poder ser compartilhado nas redes sociais. </p>
+                     <p><strong>Tecnologias:</strong> HTML, Bootstrap, JavaScript, Node.JS </p>
+                    <a href="https://valentines-day-puce.vercel.app/" target="_blank">Ver Demo</a>
+                    <a href="https://github.com/Brendon2203/valentines-day" target="_blank">Ver Código</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato!</p>
+            <form action="#" method="POST"> <!-- Substituir # por endpoint de formulário ou serviço -->
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brendon Santos. Construído com paixão e código.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
