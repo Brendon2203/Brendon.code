@@ -33,7 +33,7 @@
             <a href="#projetos" class="cta-button">Ver Projetos</a>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/brendon-santos-de-almeida-7699111ba/" target="_blank" >LinkedIn</a>
-                <a href="https://github.com/Brendon2203" target="_blank" title="Perfil no GitHub (substituir #)">GitHub</a>
+                <a href="https://github.com/Brendon2203" target="_blank">GitHub</a>
             </div>
         </section>
 
@@ -86,29 +86,40 @@
             <h2>Projetos Destacados</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <img src="img/CRM.png" alt="">
-                    <h3>Sistema de organização de leads</h3>
-                    <p>Desenvolvimento de um sistema para gerenciamento de leads com tela de login, banco de dados, analise dos dados, exportação e importação para o pipedrive, filtro de leads, backups e sistema de Mensagem programadas</p>
-                    <p><strong>Tecnologias:</strong> Python, Flask, Bootstrap, HTML, API REST </p>
-                    <a href="https://crm-simple-9xzk.onrender.com/menu" target="_blank" >Ver Demo</a>
-                    <a href="https://github.com/Brendon2203/CRM---SIMPLE" target="_blank" >Ver Código</a>
+                    <img src="img/CRM.png" class="project-img">
+                    <div class="project-top">
+                        <h3>Sistema de organização de leads</h3>
+                        <p>Desenvolvimento de um sistema para gerenciamento de leads com tela de login, banco de dados, analise dos dados, exportação e importação para o pipedrive, filtro de leads, backups e sistema de Mensagem programadas</p>
+                    </div>
+                    <div class="project-footer">
+                        <p><strong>Tecnologias:</strong> Python, Flask, Bootstrap, HTML, API REST </p>
+                        <a href="https://crm-simple-9xzk.onrender.com/menu" target="_blank" >Ver Demo</a>
+                        <a href="https://github.com/Brendon2203/CRM---SIMPLE" target="_blank" >Ver Código</a>
+                    </div>
                 </div>
                  <div class="project-card">
-                    <img src="img/login.png" alt="">
-                    
-                    <h3>Tela de login</h3>
-                    <p>Tela de login para um projeto de rede social, tela de login com verificação do google usando firebase.</p>
-                     <p><strong>Tecnologias:</strong>React, Vite, firebase, HTML, CSS, JavaScript</p>
-                    <a href="https://projeto-leitura-blue.vercel.app/" target="_blank">Ver Demo</a>
-                    <a href="https://github.com/Brendon2203/projeto-leitura" target="_blank">Ver Código</a>
+                    <img src="img/login.png" class="project-img">
+                    <div class="project-top">
+                        <h3>Tela de login para rede social</h3>
+                        <p>Tela de login para um projeto de rede social, tela de login com verificação do google usando firebase.</p>
+                    </div>
+                    <div class="project-footer">
+                        <p><strong>Tecnologias:</strong> React, Vite, firebase, HTML, CSS, JavaScript</p>
+                        <a href="https://projeto-leitura-blue.vercel.app/" target="_blank">Ver Demo</a>
+                        <a href="https://github.com/Brendon2203/projeto-leitura" target="_blank">Ver Código</a>
+                    </div>
                 </div>
                  <div class="project-card">
-                    <img src="img/Namoro.png" alt="">
-                    <h3>Gerador de pedidos de namoro</h3>
-                    <p>Site simples para criação de pedidos de namoro com texto, foto, e link do spotify para poder ser compartilhado nas redes sociais. </p>
-                     <p><strong>Tecnologias:</strong> HTML, Bootstrap, JavaScript, Node.JS </p>
-                    <a href="https://valentines-day-puce.vercel.app/" target="_blank">Ver Demo</a>
-                    <a href="https://github.com/Brendon2203/valentines-day" target="_blank">Ver Código</a>
+                    <img src="img/Namoro.png" class="project-img">
+                    <div class="project-top">
+                        <h3>Gerador de pedidos de namoro</h3>
+                        <p>Site simples para criação de pedidos de namoro com texto, foto, e link do spotify para poder ser compartilhado nas redes sociais. </p>
+                    </div>
+                    <div class="project-footer">
+                         <p><strong>Tecnologias:</strong> HTML, Bootstrap, JavaScript, Node.JS </p>
+                         <a href="https://valentines-day-puce.vercel.app/" target="_blank">Ver Demo</a>
+                         <a href="https://github.com/Brendon2203/valentines-day" target="_blank">Ver Código</a>
+                     </div>
                 </div>
             </div>
         </section>
@@ -116,10 +127,11 @@
         <section id="contato">
             <h2>Entre em Contato</h2>
             <p>Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato!</p>
-            <form action="#" method="POST"> <!-- Substituir # por endpoint de formulário ou serviço -->
-                <input type="text" name="name" placeholder="Seu Nome" required>
+            <form action="https://formsubmit.co/almeida.brendon@outlook.com" method="POST"> <!-- Substituir # por endpoint de formulário ou serviço -->
+                <input type="text" name="nome" placeholder="Seu Nome" required>
                 <input type="email" name="email" placeholder="Seu Email" required>
-                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <input type="text" name="assunto" placeholder="Assunto" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
                 <button type="submit">Enviar Mensagem</button>
             </form>
         </section>

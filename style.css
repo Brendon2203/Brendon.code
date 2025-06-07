@@ -181,14 +181,22 @@ section h2::after {
 /* Seção Sobre */
 #sobre {
     text-align: center;
+    padding: 10px;
+    
 }
 
 #sobre p {
     max-width: 700px;
     margin: 1rem auto;
     font-size: 1.1rem;
+    
+    
 }
 
+#habilidades{
+    padding: 30px;
+    margin-bottom: 30px;
+}
 /* Seção Habilidades */
 .skills-container {
     display: grid;
@@ -238,12 +246,40 @@ section h2::after {
 }
 
 /* Seção Projetos */
+
+.project-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Mantém proporção e cobre toda a área */
+    margin-bottom: 12px;
+}
+
+#projetos{
+    padding: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     max-width: 1100px;
     margin: auto;
+}
+
+.project-top {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+project-top h3 {
+    margin: 1rem 1.5rem 0.5rem;
+}
+
+.project-top p {
+    margin: 0 1.5rem 1rem;
+    flex-grow: 1;
 }
 
 .project-card {
@@ -254,6 +290,7 @@ section h2::after {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover {
@@ -261,8 +298,7 @@ section h2::after {
     box-shadow: 0 6px 15px var(--shadow-color);
 }
 
-/* Adicionar espaço para imagem do projeto (opcional) */
-/* .project-card img { width: 100%; height: 200px; object-fit: cover; } */
+
 
 .project-card h3 {
     color: var(--primary-color);
@@ -272,8 +308,12 @@ section h2::after {
 
 .project-card p {
     margin: 0 1.5rem 1rem;
-    flex-grow: 1; /* Faz a descrição ocupar espaço */
 }
+
+.project-card p:nth-of-type(2) {
+    flex-grow: 1; /* Faz só o segundo parágrafo ocupar o espaço flexível */
+}
+
 
 .project-card p strong {
     color: var(--heading-color);
@@ -299,7 +339,22 @@ section h2::after {
     opacity: 0.9;
 }
 
+.project-footer a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
 /* Seção Contato */
+
+#contato{
+    text-align: center;
+    margin-bottom: 30px
+
+}
+
 #contato form {
     max-width: 600px;
     margin: 2rem auto;
@@ -354,11 +409,14 @@ section h2::after {
     border-radius: 16px;
     
     
+    
 }
 
 .social-links a:hover {
     color: white;
     border-color: white;
+    
+    
     
     
 }
